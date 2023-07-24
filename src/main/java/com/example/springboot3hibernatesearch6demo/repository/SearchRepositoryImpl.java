@@ -1,6 +1,5 @@
-package com.example.springboot3hibernatesearch6demo.repositroy;
+package com.example.springboot3hibernatesearch6demo.repository;
 
-import com.example.springboot3hibernatesearch6demo.repositroy.SearchRepository;
 import jakarta.persistence.EntityManager;
 import java.io.Serializable;
 import java.util.List;

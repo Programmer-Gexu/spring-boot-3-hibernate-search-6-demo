@@ -1,7 +1,7 @@
 package com.example.springboot3hibernatesearch6demo.service;
 
 import com.example.springboot3hibernatesearch6demo.model.Plant;
-import com.example.springboot3hibernatesearch6demo.repositroy.PlantRepository;
+import com.example.springboot3hibernatesearch6demo.repository.PlantRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

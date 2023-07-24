@@ -1,4 +1,4 @@
-package com.example.springboot3hibernatesearch6demo.repositroy;
+package com.example.springboot3hibernatesearch6demo.repository;
 
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
