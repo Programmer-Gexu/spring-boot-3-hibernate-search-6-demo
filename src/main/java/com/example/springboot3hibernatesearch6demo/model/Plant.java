@@ -1,6 +1,12 @@
 package com.example.springboot3hibernatesearch6demo.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import java.time.Instant;
+import java.util.Objects;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,9 +16,6 @@ import org.hibernate.annotations.NaturalId;
 import org.hibernate.proxy.HibernateProxy;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
-
-import java.time.Instant;
-import java.util.Objects;
 
 /**
  * @describe:
@@ -52,6 +55,7 @@ public class Plant {
     this.name = name;
     this.scientificName = scientificName;
     this.family = family;
+    this.createAt = Instant.now();
   }
 
   @Override
