@@ -4,6 +4,7 @@ import com.example.springboot3hibernatesearch6demo.model.Plant;
 import com.example.springboot3hibernatesearch6demo.repositroy.PlantRepository;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -18,6 +19,7 @@ public class DatasourceDemoService implements DemoService {
 
   private final PlantRepository plantRepository;
 
+  @Autowired
   public DatasourceDemoService(PlantRepository plantRepository) {
 
     this.plantRepository = plantRepository;

@@ -1,7 +1,40 @@
-package com.example.springboot3hibernatesearch6demo.controller;  /**
-   * @describe: 
-   * @author: gexu
-   * @create_date: 2023/7/24 10:29
-   * @version: 1.0
-   **/public class PlantController {
+package com.example.springboot3hibernatesearch6demo.controller;
+
+import com.example.springboot3hibernatesearch6demo.model.Plant;
+import com.example.springboot3hibernatesearch6demo.model.request.SearchRequest;
+import com.example.springboot3hibernatesearch6demo.service.PlantService;
+import java.util.List;
+import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @describe:
+ * @author: gexu
+ * @create_date: 2023/7/24 10:29
+ * @version: 1.0
+ **/
+@Slf4j
+@RestController
+@RequestMapping("/plant")
+public class PlantController {
+
+  private final PlantService plantService;
+
+  @Autowired
+  public PlantController(PlantService plantService) {
+
+    this.plantService = plantService;
+  }
+
+  @GetMapping("/search")
+  @SneakyThrows
+  public List<Plant> searchPlants(SearchRequest searchRequest) {
+
+    return plantService.searchPlants(searchRequest.getText(), searchRequest.getFields(),
+        searchRequest.getLimit());
+  }
 }
