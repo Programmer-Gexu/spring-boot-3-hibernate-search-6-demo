@@ -19,6 +19,10 @@ spring:
             directory.root: ./hs-index
     hibernate:
       ddl-auto: update
+  elasticsearch:
+    uris: [ "http://localhost:9200" ]
+    username: root
+    password: example
 
 app:
   reset-with-demo-data: always
