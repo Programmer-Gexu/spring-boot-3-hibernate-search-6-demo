@@ -6,12 +6,6 @@ import org.hibernate.search.mapper.orm.Search;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * @describe:
- * @author: gexu
- * @create_date: 2023/7/24 10:33
- * @version: 1.0
- **/
 @Transactional
 @Component
 public class Indexer {

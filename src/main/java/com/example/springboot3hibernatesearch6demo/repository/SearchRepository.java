@@ -5,12 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.NoRepositoryBean;
 
-/**
- * @describe:
- * @author: gexu
- * @create_date: 2023/7/24 10:01
- * @version: 1.0
- **/
 @NoRepositoryBean
 public interface SearchRepository<T, ID> extends JpaRepository<T, ID>, JpaSpecificationExecutor<T> {
 

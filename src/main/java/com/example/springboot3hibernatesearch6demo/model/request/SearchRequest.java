@@ -6,12 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 import lombok.Data;
 
-/**
- * @describe:
- * @author: gexu
- * @create_date: 2023/7/24 10:31
- * @version: 1.0
- **/
 @Data
 public class SearchRequest {
 

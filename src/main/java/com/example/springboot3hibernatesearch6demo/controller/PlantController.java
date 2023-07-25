@@ -11,12 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @describe:
- * @author: gexu
- * @create_date: 2023/7/24 10:29
- * @version: 1.0
- **/
 @Slf4j
 @RestController
 @RequestMapping("/plant")

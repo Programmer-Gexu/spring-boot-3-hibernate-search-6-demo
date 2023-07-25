@@ -7,12 +7,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * @describe:
- * @author: gexu
- * @create_date: 2023/7/24 10:42
- * @version: 1.0
- **/
 @Service
 @Slf4j
 public class DatasourceDemoService implements DemoService {

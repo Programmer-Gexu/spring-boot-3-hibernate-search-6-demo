@@ -17,12 +17,6 @@ import org.hibernate.proxy.HibernateProxy;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
 
-/**
- * @describe:
- * @author: gexu
- * @create_date: 2023/7/24 9:41
- * @version: 1.0
- **/
 @Indexed
 @Entity
 @Table
